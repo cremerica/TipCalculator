@@ -1,0 +1,1 @@
+{'openapi': '3.0.1', 'info': {'title': 'Tipcalculator', 'x-cortex-git': {'github': {'repository': 'cremerica/TipCalculator'}}, 'x-cortex-tag': 'tipcalculator', 'x-cortex-type': 'service'}}
