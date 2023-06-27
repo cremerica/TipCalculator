@@ -1,0 +1,40 @@
+tag: simple-example-2
+name: Simple Example 2
+draft: false
+ladder:
+  name: Default Ladder
+  levels:
+  - name: Good
+    rank: 1
+    color: '#f9da10'
+  - name: Better
+    rank: 2
+    color: '#f58a32'
+  - name: Best
+    rank: 3
+    color: '#73fd17'
+rules:
+- title: Description is Set
+  expression: description != null
+  weight: 1
+  level: Good
+  filter:
+    category: SERVICE
+- title: Service Data not updated last week
+  expression: entity_last_updated < duration("P2W")
+  weight: 1
+  level: Better
+  filter:
+    category: SERVICE
+- title: Git Repo Is Set
+  expression: git != null
+  weight: 1
+  level: Best
+  filter:
+    category: SERVICE
+- title: Owner is set
+  expression: ownership != null
+  weight: 1
+  level: Better
+  filter:
+    category: SERVICE
