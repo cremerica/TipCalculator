@@ -1,0 +1,12 @@
+openapi: 3.0.1
+info:
+  title: ' '
+  description: ""
+  x-cortex-tag: '-'
+  x-cortex-git:
+    github:
+      repository: cremerica/TipCalculator
+      basepath: .
+  x-cortex-custom-metadata:
+    cortex-template-version: 0.1.0
+    cortex-generated-timestamp: 2023-05-08T20:14:46.266837
